@@ -18,16 +18,14 @@ import java.util.logging.Logger;
  * @author aaron
  */
 public class ConnectPG {
-    
+
     private Connection con;
     private Statement st;
     private ResultSet rs;
 
-    private String MiConexion = "jdbc:postgresql://localhost:5432/basedatosAirosRed";
+    private String MiConexion = "jdbc:postgresql://localhost:5432/BaseDeDatosAirosRed2.0";
     private String usuarioPG = "postgres";
     private String contrasenaPG = "root";
-   
-   
 
     public ConnectPG() {
 //Cargar driver de base de datos
@@ -50,7 +48,7 @@ public class ConnectPG {
     public ResultSet query(String sql) {
         try {
             st = con.createStatement();
-          
+
             ResultSet resultado = st.executeQuery(sql);
             return resultado;
         } catch (SQLException ex) {
@@ -81,6 +79,5 @@ public class ConnectPG {
     public void setCon(Connection con) {
         this.con = con;
     }
-    
-    
+
 }

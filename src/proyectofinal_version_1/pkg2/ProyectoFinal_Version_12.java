@@ -5,7 +5,9 @@
  */
 package proyectofinal_version_1.pkg2;
 
+import Controlador.ControladorLogin;
 import Controlador.ControladorVistaPrincipal;
+import Modelo.PersonaDB;
 
 import Vista.*;
 
@@ -20,10 +22,10 @@ public class ProyectoFinal_Version_12 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-
-        MenuInicio2_0 menu = new MenuInicio2_0();
-        ControladorVistaPrincipal controlPrincipal = new ControladorVistaPrincipal(menu);
-        controlPrincipal.InioiaControladorMenuInicio();
+        PersonaDB cliente = new PersonaDB();
+        Login login = new Login();
+        ControladorLogin control = new ControladorLogin(login, cliente);
+        control.IniciaControl();
 
     }
 

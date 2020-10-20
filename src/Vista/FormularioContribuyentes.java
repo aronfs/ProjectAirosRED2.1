@@ -6,13 +6,18 @@
 package Vista;
 
 import java.awt.Color;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JSpinner;
+import javax.swing.JTable;
 import javax.swing.JTextField;
 
 /**
  *
  * @author aaron
  */
-public class FormularioContribuyentes extends javax.swing.JFrame {
+public class FormularioContribuyentes extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form FormularioContribuyentes
@@ -33,26 +38,27 @@ public class FormularioContribuyentes extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         txtRuc = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jSpinner1 = new javax.swing.JSpinner();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        spnIngreso = new javax.swing.JSpinner();
+        txtCiudad = new javax.swing.JTextField();
+        txtTelefono = new javax.swing.JTextField();
+        txtDireccion = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        txtNombreComercial = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        cbxEstadoContribuyente = new javax.swing.JComboBox<>();
+        txtCedula = new javax.swing.JLabel();
+        btnCancelar = new javax.swing.JButton();
+        btnGuardar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tblContribuyentes = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -65,13 +71,9 @@ public class FormularioContribuyentes extends javax.swing.JFrame {
         jLabel1.setText("RUC:");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, -1, -1));
 
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel2.setText("Razon Social:");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, -1, -1));
-
         jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Cedula:");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, -1, 40));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, -1, 40));
 
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText(" Ingresos Anuales:");
@@ -87,42 +89,52 @@ public class FormularioContribuyentes extends javax.swing.JFrame {
 
         jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Direccion:");
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 140, -1, -1));
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, -1, -1));
 
         txtRuc.setBackground(new java.awt.Color(255, 255, 255));
         txtRuc.setForeground(new java.awt.Color(0, 0, 0));
         jPanel2.add(txtRuc, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 200, -1));
 
-        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 200, -1));
+        spnIngreso.setModel(new javax.swing.SpinnerNumberModel(Float.valueOf(0.0f), Float.valueOf(0.0f), Float.valueOf(30000.0f), Float.valueOf(1.0f)));
+        jPanel2.add(spnIngreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, 200, -1));
 
-        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 200, -1));
-        jPanel2.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, 200, -1));
+        txtCiudad.setBackground(new java.awt.Color(255, 255, 255));
+        txtCiudad.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel2.add(txtCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, 200, -1));
 
-        jTextField4.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField4.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, 200, -1));
+        txtTelefono.setBackground(new java.awt.Color(255, 255, 255));
+        txtTelefono.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel2.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 140, 200, -1));
 
-        jTextField5.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField5.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, 200, -1));
+        txtDireccion.setBackground(new java.awt.Color(255, 255, 255));
+        txtDireccion.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel2.add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 144, 200, 20));
 
-        jTextField6.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField6.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 140, 200, -1));
+        jLabel2.setText("Telefono:");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 136, -1, 30));
+
+        txtNombreComercial.setBackground(new java.awt.Color(255, 255, 255));
+        txtNombreComercial.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel2.add(txtNombreComercial, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, 200, -1));
+
+        jLabel8.setText("Estado Contribuyente:");
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 176, -1, 30));
+
+        cbxEstadoContribuyente.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Activo", "No Activo" }));
+        jPanel2.add(cbxEstadoContribuyente, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 180, 200, -1));
+
+        txtCedula.setText("----------------------------------");
+        jPanel2.add(txtCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 110, 150, -1));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 750, 240));
 
-        jButton2.setText("Cancelar");
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 470, 90, -1));
+        btnCancelar.setText("Cancelar");
+        jPanel1.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 470, 90, -1));
 
-        jButton1.setText("Guardar");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 470, -1, -1));
+        btnGuardar.setText("Guardar");
+        jPanel1.add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 470, -1, -1));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tblContribuyentes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null},
@@ -133,7 +145,7 @@ public class FormularioContribuyentes extends javax.swing.JFrame {
                 "RUC", "Razon Social ", "Cedula", "Ingresos Anuales", "Ciudad", "Nombre Comercial", "Direccion"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tblContribuyentes);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 730, 200));
 
@@ -159,6 +171,86 @@ public class FormularioContribuyentes extends javax.swing.JFrame {
 
     public void setTxtRuc(JTextField txtRuc) {
         this.txtRuc = txtRuc;
+    }
+
+    public JButton getBtnCancelar() {
+        return btnCancelar;
+    }
+
+    public void setBtnCancelar(JButton btnCancelar) {
+        this.btnCancelar = btnCancelar;
+    }
+
+    public JButton getBtnGuardar() {
+        return btnGuardar;
+    }
+
+    public void setBtnGuardar(JButton btnGuardar) {
+        this.btnGuardar = btnGuardar;
+    }
+
+    public JComboBox<String> getCbxEstadoContribuyente() {
+        return cbxEstadoContribuyente;
+    }
+
+    public void setCbxEstadoContribuyente(JComboBox<String> cbxEstadoContribuyente) {
+        this.cbxEstadoContribuyente = cbxEstadoContribuyente;
+    }
+
+    public JSpinner getSpnIngreso() {
+        return spnIngreso;
+    }
+
+    public void setSpnIngreso(JSpinner spnIngreso) {
+        this.spnIngreso = spnIngreso;
+    }
+
+    public JTable getTblContribuyentes() {
+        return tblContribuyentes;
+    }
+
+    public void setTblContribuyentes(JTable tblContribuyentes) {
+        this.tblContribuyentes = tblContribuyentes;
+    }
+
+    public JLabel getTxtCedula() {
+        return txtCedula;
+    }
+
+    public void setTxtCedula(JLabel txtCedula) {
+        this.txtCedula = txtCedula;
+    }
+
+    public JTextField getTxtCiudad() {
+        return txtCiudad;
+    }
+
+    public void setTxtCiudad(JTextField txtCiudad) {
+        this.txtCiudad = txtCiudad;
+    }
+
+    public JTextField getTxtDireccion() {
+        return txtDireccion;
+    }
+
+    public void setTxtDireccion(JTextField txtDireccion) {
+        this.txtDireccion = txtDireccion;
+    }
+
+    public JTextField getTxtNombreComercial() {
+        return txtNombreComercial;
+    }
+
+    public void setTxtNombreComercial(JTextField txtNombreComercial) {
+        this.txtNombreComercial = txtNombreComercial;
+    }
+
+    public JTextField getTxtTelefono() {
+        return txtTelefono;
+    }
+
+    public void setTxtTelefono(JTextField txtTelefono) {
+        this.txtTelefono = txtTelefono;
     }
 
     /**
@@ -197,8 +289,9 @@ public class FormularioContribuyentes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnCancelar;
+    private javax.swing.JButton btnGuardar;
+    private javax.swing.JComboBox<String> cbxEstadoContribuyente;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -206,16 +299,17 @@ public class FormularioContribuyentes extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSpinner jSpinner1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
+    private javax.swing.JSpinner spnIngreso;
+    private javax.swing.JTable tblContribuyentes;
+    private javax.swing.JLabel txtCedula;
+    private javax.swing.JTextField txtCiudad;
+    private javax.swing.JTextField txtDireccion;
+    private javax.swing.JTextField txtNombreComercial;
     private javax.swing.JTextField txtRuc;
+    private javax.swing.JTextField txtTelefono;
     // End of variables declaration//GEN-END:variables
 }

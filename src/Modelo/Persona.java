@@ -5,30 +5,39 @@
  */
 package Modelo;
 
+import java.sql.Date;
+
 /**
  *
  * @author aaron
  */
-public class Persona {
-    
-    
+public class Persona  {
+
     private String Cedula;
     private String Nombre;
     private String Apellido;
     private String Telefono;
-    private String String;
-    private String Email;
+    private String direccion;
+    private String email;
+    private Date edad;
 
     public Persona() {
     }
 
-    public Persona(String Cedula, String Nombre, String Apellido, String Telefono, String String, String Email) {
+    public Persona(String Cedula, String Nombre) {
+        this.Cedula = Cedula;
+        this.Nombre = Nombre;
+    }
+
+   
+    public Persona(String Cedula, String Nombre, String Apellido, String Telefono, String direccion, String email, Date edad) {
         this.Cedula = Cedula;
         this.Nombre = Nombre;
         this.Apellido = Apellido;
         this.Telefono = Telefono;
-        this.String = String;
-        this.Email = Email;
+        this.direccion = direccion;
+        this.email = email;
+        this.edad = edad;
     }
 
     public String getCedula() {
@@ -63,22 +72,28 @@ public class Persona {
         this.Telefono = Telefono;
     }
 
-    public String getString() {
-        return String;
+    public String getDireccion() {
+        return direccion;
     }
 
-    public void setString(String String) {
-        this.String = String;
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
-    public void setEmail(String Email) {
-        this.Email = Email;
+    public void setEmail(String email) {
+        this.email = email;
     }
-    
-    
-    
+
+    public Date getEdad() {
+        return edad;
+    }
+
+    public void setEdad(Date edad) {
+        this.edad = edad;
+    }
+
 }

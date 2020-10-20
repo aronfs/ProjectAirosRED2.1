@@ -5,8 +5,11 @@
  */
 package Controlador;
 
+import Modelo.PersonaDB;
 import Vista.FormularioCambioPlan;
+import Vista.FormularioContribuyentes;
 import Vista.FormularioFactura;
+import Vista.Login;
 import Vista.MenuInicio2_0;
 import Vista.OrdenesTrabajo;
 import Vista.VentanaCambioDireccion;
@@ -30,7 +33,6 @@ import Vista.VentanaSuspension;
 import Vista.VentanaTarifasInstalacion;
 import Vista.VentanaTipoCliente;
 import Vista.VentanaVelocidades;
-import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -325,9 +327,16 @@ public class ControladorVistaPrincipal implements MouseListener, ActionListener 
 
     public void mostrarVentanaContribuyentes() {
         VentanaContribuentes ventanaContribuentes = new VentanaContribuentes();
+        FormularioContribuyentes formulario = new FormularioContribuyentes();
+        MenuInicio2_0 menu = new MenuInicio2_0();
+        PersonaDB persona = new PersonaDB();
+        Login login = new Login();
         Vista.getEscritorio().add(ventanaContribuentes);
-        ControladorCRUDVentanaContribuyentes control = new ControladorCRUDVentanaContribuyentes(ventanaContribuentes);
+        Vista.getEscritorio().add(formulario);
+
+        ControladorCRUDVentanaContribuyentes control = new ControladorCRUDVentanaContribuyentes(ventanaContribuentes, formulario, persona, menu,login);
         control.iniciar();
+        control.iniciaControl();
 
     }
 

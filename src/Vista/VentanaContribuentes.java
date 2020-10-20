@@ -170,21 +170,21 @@ public class VentanaContribuentes extends javax.swing.JInternalFrame {
         VentanaContribuyente_PanelGeneral.setBackground(new java.awt.Color(255, 255, 255));
         VentanaContribuyente_PanelGeneral.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        VentanaContribuyentes_PanelBntNuevo.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaContribuyentes_PanelBntNuevo.setBackground(new java.awt.Color(204, 0, 0));
 
-        VentanaContribuyente_BntNuevo.setBackground(new java.awt.Color(0, 255, 51));
+        VentanaContribuyente_BntNuevo.setBackground(new java.awt.Color(102, 102, 102));
         VentanaContribuyente_BntNuevo.setForeground(new java.awt.Color(255, 255, 255));
         VentanaContribuyente_BntNuevo.setText("Nuevo");
 
-        VentanaContribuyente_BntEditar.setBackground(new java.awt.Color(0, 255, 51));
+        VentanaContribuyente_BntEditar.setBackground(new java.awt.Color(102, 102, 102));
         VentanaContribuyente_BntEditar.setForeground(new java.awt.Color(255, 255, 255));
         VentanaContribuyente_BntEditar.setText("Editar");
 
-        VentanaContribuyente_BntAnular.setBackground(new java.awt.Color(0, 255, 51));
+        VentanaContribuyente_BntAnular.setBackground(new java.awt.Color(102, 102, 102));
         VentanaContribuyente_BntAnular.setForeground(new java.awt.Color(255, 255, 255));
         VentanaContribuyente_BntAnular.setText("Anular");
 
-        VentanaContribuyente_BntVerPlantilla.setBackground(new java.awt.Color(0, 255, 51));
+        VentanaContribuyente_BntVerPlantilla.setBackground(new java.awt.Color(102, 102, 102));
         VentanaContribuyente_BntVerPlantilla.setForeground(new java.awt.Color(255, 255, 255));
         VentanaContribuyente_BntVerPlantilla.setText("Ver plantilla");
 
@@ -241,17 +241,17 @@ public class VentanaContribuentes extends javax.swing.JInternalFrame {
 
         VentanaContribuyente_PanelGeneral.add(VentanaContribuyente_PanelContribuyente, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 980, 100));
 
-        VentanaContribuyente_PanelAplicar.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaContribuyente_PanelAplicar.setBackground(new java.awt.Color(204, 0, 0));
 
-        VentanaContribuyente_BntAplicarFiltros.setBackground(new java.awt.Color(0, 255, 51));
+        VentanaContribuyente_BntAplicarFiltros.setBackground(new java.awt.Color(102, 102, 102));
         VentanaContribuyente_BntAplicarFiltros.setForeground(new java.awt.Color(255, 255, 255));
         VentanaContribuyente_BntAplicarFiltros.setText("Aplicar Filtros");
 
-        VentanaContribuyente_BntActualizar.setBackground(new java.awt.Color(0, 255, 51));
+        VentanaContribuyente_BntActualizar.setBackground(new java.awt.Color(102, 102, 102));
         VentanaContribuyente_BntActualizar.setForeground(new java.awt.Color(255, 255, 255));
         VentanaContribuyente_BntActualizar.setText("Actualizar");
 
-        VentanaContribuyente_BntRestablecerFiltros.setBackground(new java.awt.Color(0, 255, 51));
+        VentanaContribuyente_BntRestablecerFiltros.setBackground(new java.awt.Color(102, 102, 102));
         VentanaContribuyente_BntRestablecerFiltros.setForeground(new java.awt.Color(255, 255, 255));
         VentanaContribuyente_BntRestablecerFiltros.setText("Restablecer Filtros");
 

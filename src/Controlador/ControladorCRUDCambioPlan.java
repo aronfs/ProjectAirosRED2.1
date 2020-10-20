@@ -14,36 +14,33 @@ import java.awt.event.ActionListener;
  *
  * @author aaron
  */
-public class ControladorCRUDCambioPlan implements ActionListener{
-    private final  FormularioCambioPlan formularioCambioPlan;
-    private final VentanaCambioPlan ventanaCambioPlan;
+public class ControladorCRUDCambioPlan implements ActionListener {
 
-    public ControladorCRUDCambioPlan(FormularioCambioPlan formularioCambioPlan, VentanaCambioPlan ventanaCambioPlan) {
-        this.formularioCambioPlan = formularioCambioPlan;
+    private VentanaCambioPlan ventanaCambioPlan;
+    private FormularioCambioPlan formualCambioPlan;
+
+    public ControladorCRUDCambioPlan(VentanaCambioPlan ventanaCambioPlan, FormularioCambioPlan formualCambioPlan) {
         this.ventanaCambioPlan = ventanaCambioPlan;
+        this.formualCambioPlan = formualCambioPlan;
     }
 
-    ControladorCRUDCambioPlan(VentanaCambioPlan ventanaCambioPlan, FormularioCambioPlan formulario) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public ControladorCRUDCambioPlan() {
     }
 
-    public void IniciaControl(){
-        ventanaCambioPlan.getVentanaCambioPlanBnt_Nuevo().addActionListener(i->MostrarFormulario());
-    }
-   
-    public void MostrarFormulario(){
-        formularioCambioPlan.setVisible(true);
-        formularioCambioPlan.setLocationRelativeTo(null);
-    }
-    
-    
-    public void Iniciar(){
+    public void Iniciar() {
         ventanaCambioPlan.setVisible(true);
         ventanaCambioPlan.setLocation(150, 30);
     }
 
+    public void IniciaControl(){
+        
+    }
+    
+    
+    
     @Override
     public void actionPerformed(ActionEvent ae) {
-       // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
 }

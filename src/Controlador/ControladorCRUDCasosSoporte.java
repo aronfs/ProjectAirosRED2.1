@@ -13,10 +13,13 @@ import Vista.VentanaCasosSoporte;
  */
 public class ControladorCRUDCasosSoporte {
 
-    private final VentanaCasosSoporte ventanaCasosSoporte;
+    private VentanaCasosSoporte ventanaCasosSoporte;
 
     public ControladorCRUDCasosSoporte(VentanaCasosSoporte ventanaCasosSoporte) {
         this.ventanaCasosSoporte = ventanaCasosSoporte;
+    }
+
+    public ControladorCRUDCasosSoporte() {
     }
 
     public void Iniciar() {
