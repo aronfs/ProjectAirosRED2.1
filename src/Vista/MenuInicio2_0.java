@@ -40,61 +40,34 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
         lblCedula = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         Panel2MenuInicio = new javax.swing.JPanel();
-        lblCompras = new javax.swing.JLabel();
         lblVentas = new javax.swing.JLabel();
         lblInventario = new javax.swing.JLabel();
         lblDirectorio = new javax.swing.JLabel();
         lblProvServiciosInternet = new javax.swing.JLabel();
         lblRegistroLlamadas = new javax.swing.JLabel();
         lblInicio = new javax.swing.JLabel();
+        btnReportes = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         btnSalir = new javax.swing.JLabel();
         Escritorio = new javax.swing.JDesktopPane();
-        lblOperariosSoporte = new javax.swing.JPanel();
-        btnOperarioSoporte = new javax.swing.JLabel();
-        lblPlanesInternet = new javax.swing.JPanel();
-        btnPlaneInternet = new javax.swing.JLabel();
-        lblReportesStock = new javax.swing.JPanel();
-        btnReportes = new javax.swing.JLabel();
         lblCasosSoporte = new javax.swing.JPanel();
         btnCasosSoporte = new javax.swing.JLabel();
         lblMotivoSoporte = new javax.swing.JPanel();
         btnMotivosSoporte = new javax.swing.JLabel();
-        lblContratos = new javax.swing.JPanel();
-        btnContratos = new javax.swing.JLabel();
-        lblSolicitudes = new javax.swing.JPanel();
-        btnSolicitudes = new javax.swing.JLabel();
-        lblReactivacion = new javax.swing.JPanel();
-        btnReactivacion = new javax.swing.JLabel();
-        lblCambioDireccion = new javax.swing.JPanel();
-        btnCambioDireccion = new javax.swing.JLabel();
         lblItems = new javax.swing.JPanel();
-        btnItems = new javax.swing.JLabel();
-        btnSeries = new javax.swing.JLabel();
-        lblCancelacionServicio = new javax.swing.JPanel();
-        btnCancelacionServicio = new javax.swing.JLabel();
-        lblSuspension = new javax.swing.JPanel();
-        btnSuspension = new javax.swing.JLabel();
+        btnMateriales = new javax.swing.JLabel();
         lbltipoCliente = new javax.swing.JPanel();
-        btnTipoCliente = new javax.swing.JLabel();
+        btnSuspension = new javax.swing.JLabel();
         lblTarifaInstalacion = new javax.swing.JPanel();
-        btnTarifasInstalacion = new javax.swing.JLabel();
-        lblCambioPlan = new javax.swing.JPanel();
-        btnCambioPlan = new javax.swing.JLabel();
-        lblServicio = new javax.swing.JPanel();
-        btnServicio = new javax.swing.JLabel();
-        lblNombresTecnicos = new javax.swing.JPanel();
-        btnNombresTecnicos = new javax.swing.JLabel();
-        lblVelocidades = new javax.swing.JPanel();
-        btnVelocidadesPlan = new javax.swing.JLabel();
-        lblOrdenesTrabajo = new javax.swing.JPanel();
-        btnOrdenesTrabajo = new javax.swing.JLabel();
-        lblComprasPanel = new javax.swing.JPanel();
-        btnCompras = new javax.swing.JLabel();
+        btnPlaneInternet = new javax.swing.JLabel();
         lblFactura = new javax.swing.JPanel();
         btnFacturas = new javax.swing.JLabel();
         lblContribuyentes = new javax.swing.JPanel();
         btnContribuyentes = new javax.swing.JLabel();
+        lbltipoContratos = new javax.swing.JPanel();
+        btnContratos = new javax.swing.JLabel();
+        lbltipoOrdenes = new javax.swing.JPanel();
+        btnOrdenesTrabajo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -132,11 +105,6 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
         Panel2MenuInicio.setBackground(new java.awt.Color(255, 51, 51));
         Panel2MenuInicio.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblCompras.setForeground(new java.awt.Color(0, 0, 0));
-        lblCompras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/Iconos/icons8-yard-sale-20.png"))); // NOI18N
-        lblCompras.setText("Compras");
-        Panel2MenuInicio.add(lblCompras, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 0, 90, 60));
-
         lblVentas.setForeground(new java.awt.Color(0, 0, 0));
         lblVentas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/Iconos/icons8-vender-stock-20.png"))); // NOI18N
         lblVentas.setText("Ventas");
@@ -145,27 +113,34 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
         lblInventario.setForeground(new java.awt.Color(0, 0, 0));
         lblInventario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/Iconos/icons8-caja-de-herramientas-20.png"))); // NOI18N
         lblInventario.setText("Inventario");
-        Panel2MenuInicio.add(lblInventario, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 0, 100, 60));
+        Panel2MenuInicio.add(lblInventario, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 100, 60));
 
         lblDirectorio.setForeground(new java.awt.Color(0, 0, 0));
         lblDirectorio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/Iconos/icons8-libros-20.png"))); // NOI18N
         lblDirectorio.setText("Directorio");
-        Panel2MenuInicio.add(lblDirectorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 90, 60));
+        Panel2MenuInicio.add(lblDirectorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 0, 90, 60));
 
         lblProvServiciosInternet.setForeground(new java.awt.Color(0, 0, 0));
         lblProvServiciosInternet.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/Iconos/icons8-wifi-20.png"))); // NOI18N
         lblProvServiciosInternet.setText("Prov. Servicios de Internet");
-        Panel2MenuInicio.add(lblProvServiciosInternet, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 0, 190, 60));
+        Panel2MenuInicio.add(lblProvServiciosInternet, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 0, 190, 60));
 
         lblRegistroLlamadas.setForeground(new java.awt.Color(0, 0, 0));
         lblRegistroLlamadas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/Iconos/icons8-auriculares-20.png"))); // NOI18N
         lblRegistroLlamadas.setText("Registro de llamadas");
-        Panel2MenuInicio.add(lblRegistroLlamadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 0, 170, 60));
+        Panel2MenuInicio.add(lblRegistroLlamadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 0, 170, 60));
 
         lblInicio.setForeground(new java.awt.Color(0, 0, 0));
         lblInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/Iconos/icons8-casa-20.png"))); // NOI18N
         lblInicio.setText("Inicio");
         Panel2MenuInicio.add(lblInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 70, 60));
+
+        btnReportes.setBackground(new java.awt.Color(0, 0, 0));
+        btnReportes.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        btnReportes.setForeground(new java.awt.Color(0, 0, 0));
+        btnReportes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-libro-20.png"))); // NOI18N
+        btnReportes.setText("Reportes");
+        Panel2MenuInicio.add(btnReportes, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 0, 140, 60));
 
         jDesktopPane1.add(Panel2MenuInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 1310, -1));
 
@@ -191,83 +166,8 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
 
         jDesktopPane1.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1310, 20));
 
-        Escritorio.setBackground(new java.awt.Color(255, 153, 153));
+        Escritorio.setBackground(new java.awt.Color(255, 255, 255));
         Escritorio.setForeground(new java.awt.Color(255, 102, 102));
-
-        lblOperariosSoporte.setBackground(new java.awt.Color(255, 102, 102));
-        lblOperariosSoporte.setForeground(new java.awt.Color(255, 255, 255));
-
-        btnOperarioSoporte.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        btnOperarioSoporte.setForeground(new java.awt.Color(0, 0, 0));
-        btnOperarioSoporte.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-cliente-de-empresa-20.png"))); // NOI18N
-        btnOperarioSoporte.setText("Operarios de Soporte");
-
-        javax.swing.GroupLayout lblOperariosSoporteLayout = new javax.swing.GroupLayout(lblOperariosSoporte);
-        lblOperariosSoporte.setLayout(lblOperariosSoporteLayout);
-        lblOperariosSoporteLayout.setHorizontalGroup(
-            lblOperariosSoporteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lblOperariosSoporteLayout.createSequentialGroup()
-                .addComponent(btnOperarioSoporte, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 4, Short.MAX_VALUE))
-        );
-        lblOperariosSoporteLayout.setVerticalGroup(
-            lblOperariosSoporteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lblOperariosSoporteLayout.createSequentialGroup()
-                .addComponent(btnOperarioSoporte, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        Escritorio.add(lblOperariosSoporte);
-        lblOperariosSoporte.setBounds(631, 80, 170, 39);
-
-        lblPlanesInternet.setBackground(new java.awt.Color(255, 102, 102));
-        lblPlanesInternet.setForeground(new java.awt.Color(255, 255, 255));
-
-        btnPlaneInternet.setBackground(new java.awt.Color(0, 0, 0));
-        btnPlaneInternet.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        btnPlaneInternet.setForeground(new java.awt.Color(0, 0, 0));
-        btnPlaneInternet.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-libro-20.png"))); // NOI18N
-        btnPlaneInternet.setText("Planes de Internet");
-
-        javax.swing.GroupLayout lblPlanesInternetLayout = new javax.swing.GroupLayout(lblPlanesInternet);
-        lblPlanesInternet.setLayout(lblPlanesInternetLayout);
-        lblPlanesInternetLayout.setHorizontalGroup(
-            lblPlanesInternetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lblPlanesInternetLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnPlaneInternet, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        lblPlanesInternetLayout.setVerticalGroup(
-            lblPlanesInternetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnPlaneInternet, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
-        );
-
-        Escritorio.add(lblPlanesInternet);
-        lblPlanesInternet.setBounds(441, 160, 190, 50);
-
-        lblReportesStock.setBackground(new java.awt.Color(255, 102, 102));
-        lblReportesStock.setForeground(new java.awt.Color(255, 255, 255));
-
-        btnReportes.setBackground(new java.awt.Color(0, 0, 0));
-        btnReportes.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        btnReportes.setForeground(new java.awt.Color(0, 0, 0));
-        btnReportes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-libro-20.png"))); // NOI18N
-        btnReportes.setText("Reportes Stock");
-
-        javax.swing.GroupLayout lblReportesStockLayout = new javax.swing.GroupLayout(lblReportesStock);
-        lblReportesStock.setLayout(lblReportesStockLayout);
-        lblReportesStockLayout.setHorizontalGroup(
-            lblReportesStockLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnReportes, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
-        );
-        lblReportesStockLayout.setVerticalGroup(
-            lblReportesStockLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnReportes, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-        );
-
-        Escritorio.add(lblReportesStock);
-        lblReportesStock.setBounds(341, 69, 140, 30);
 
         lblCasosSoporte.setBackground(new java.awt.Color(255, 102, 102));
         lblCasosSoporte.setForeground(new java.awt.Color(255, 255, 255));
@@ -282,8 +182,8 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
         lblCasosSoporteLayout.setHorizontalGroup(
             lblCasosSoporteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lblCasosSoporteLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnCasosSoporte, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
+                .addContainerGap(16, Short.MAX_VALUE)
+                .addComponent(btnCasosSoporte, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         lblCasosSoporteLayout.setVerticalGroup(
@@ -292,7 +192,7 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
         );
 
         Escritorio.add(lblCasosSoporte);
-        lblCasosSoporte.setBounds(631, 0, 170, 39);
+        lblCasosSoporte.setBounds(550, 0, 170, 39);
 
         lblMotivoSoporte.setBackground(new java.awt.Color(255, 102, 102));
         lblMotivoSoporte.setForeground(new java.awt.Color(255, 255, 255));
@@ -307,8 +207,8 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
         lblMotivoSoporteLayout.setHorizontalGroup(
             lblMotivoSoporteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lblMotivoSoporteLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnMotivosSoporte, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
+                .addContainerGap(15, Short.MAX_VALUE)
+                .addComponent(btnMotivosSoporte)
                 .addContainerGap())
         );
         lblMotivoSoporteLayout.setVerticalGroup(
@@ -317,174 +217,35 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
         );
 
         Escritorio.add(lblMotivoSoporte);
-        lblMotivoSoporte.setBounds(631, 40, 170, 39);
-
-        lblContratos.setBackground(new java.awt.Color(255, 102, 102));
-        lblContratos.setForeground(new java.awt.Color(255, 255, 255));
-
-        btnContratos.setBackground(new java.awt.Color(0, 0, 0));
-        btnContratos.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        btnContratos.setForeground(new java.awt.Color(0, 0, 0));
-        btnContratos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-contrato-de-trabajo-20.png"))); // NOI18N
-        btnContratos.setText("Contratos");
-
-        javax.swing.GroupLayout lblContratosLayout = new javax.swing.GroupLayout(lblContratos);
-        lblContratos.setLayout(lblContratosLayout);
-        lblContratosLayout.setHorizontalGroup(
-            lblContratosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lblContratosLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnContratos, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        lblContratosLayout.setVerticalGroup(
-            lblContratosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lblContratosLayout.createSequentialGroup()
-                .addComponent(btnContratos, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        Escritorio.add(lblContratos);
-        lblContratos.setBounds(441, 250, 190, 50);
-
-        lblSolicitudes.setBackground(new java.awt.Color(255, 102, 102));
-        lblSolicitudes.setForeground(new java.awt.Color(255, 255, 255));
-
-        btnSolicitudes.setBackground(new java.awt.Color(0, 0, 0));
-        btnSolicitudes.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        btnSolicitudes.setForeground(new java.awt.Color(0, 0, 0));
-        btnSolicitudes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-contabilidad-20.png"))); // NOI18N
-        btnSolicitudes.setText("Solicitudes >");
-
-        javax.swing.GroupLayout lblSolicitudesLayout = new javax.swing.GroupLayout(lblSolicitudes);
-        lblSolicitudes.setLayout(lblSolicitudesLayout);
-        lblSolicitudesLayout.setHorizontalGroup(
-            lblSolicitudesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lblSolicitudesLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnSolicitudes, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        lblSolicitudesLayout.setVerticalGroup(
-            lblSolicitudesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lblSolicitudesLayout.createSequentialGroup()
-                .addComponent(btnSolicitudes, javax.swing.GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        Escritorio.add(lblSolicitudes);
-        lblSolicitudes.setBounds(441, 200, 190, 60);
-
-        lblReactivacion.setBackground(new java.awt.Color(255, 102, 102));
-        lblReactivacion.setForeground(new java.awt.Color(255, 255, 255));
-
-        btnReactivacion.setBackground(new java.awt.Color(0, 0, 0));
-        btnReactivacion.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        btnReactivacion.setForeground(new java.awt.Color(0, 0, 0));
-        btnReactivacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-términos-y-condiciones-20.png"))); // NOI18N
-        btnReactivacion.setText("Reactivacion");
-
-        javax.swing.GroupLayout lblReactivacionLayout = new javax.swing.GroupLayout(lblReactivacion);
-        lblReactivacion.setLayout(lblReactivacionLayout);
-        lblReactivacionLayout.setHorizontalGroup(
-            lblReactivacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnReactivacion, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
-        );
-        lblReactivacionLayout.setVerticalGroup(
-            lblReactivacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lblReactivacionLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnReactivacion, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        Escritorio.add(lblReactivacion);
-        lblReactivacion.setBounds(631, 380, 210, 30);
-
-        lblCambioDireccion.setBackground(new java.awt.Color(255, 102, 102));
-        lblCambioDireccion.setForeground(new java.awt.Color(255, 255, 255));
-
-        btnCambioDireccion.setBackground(new java.awt.Color(0, 0, 0));
-        btnCambioDireccion.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        btnCambioDireccion.setForeground(new java.awt.Color(0, 0, 0));
-        btnCambioDireccion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-punto-de-interés-20.png"))); // NOI18N
-        btnCambioDireccion.setText("Cambio de direccion");
-
-        javax.swing.GroupLayout lblCambioDireccionLayout = new javax.swing.GroupLayout(lblCambioDireccion);
-        lblCambioDireccion.setLayout(lblCambioDireccionLayout);
-        lblCambioDireccionLayout.setHorizontalGroup(
-            lblCambioDireccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnCambioDireccion, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
-        );
-        lblCambioDireccionLayout.setVerticalGroup(
-            lblCambioDireccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnCambioDireccion, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-        );
-
-        Escritorio.add(lblCambioDireccion);
-        lblCambioDireccion.setBounds(631, 340, 210, 40);
+        lblMotivoSoporte.setBounds(550, 40, 170, 39);
 
         lblItems.setBackground(new java.awt.Color(255, 102, 102));
         lblItems.setForeground(new java.awt.Color(255, 255, 255));
 
-        btnItems.setBackground(new java.awt.Color(0, 0, 0));
-        btnItems.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        btnItems.setForeground(new java.awt.Color(0, 0, 0));
-        btnItems.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-categorizar-20.png"))); // NOI18N
-        btnItems.setText("Items");
-
-        btnSeries.setBackground(new java.awt.Color(0, 0, 0));
-        btnSeries.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        btnSeries.setForeground(new java.awt.Color(0, 0, 0));
-        btnSeries.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-código-de-barras-20.png"))); // NOI18N
-        btnSeries.setText("Series");
+        btnMateriales.setBackground(new java.awt.Color(0, 0, 0));
+        btnMateriales.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        btnMateriales.setForeground(new java.awt.Color(0, 0, 0));
+        btnMateriales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-categorizar-20.png"))); // NOI18N
+        btnMateriales.setText("Materiales");
 
         javax.swing.GroupLayout lblItemsLayout = new javax.swing.GroupLayout(lblItems);
         lblItems.setLayout(lblItemsLayout);
         lblItemsLayout.setHorizontalGroup(
             lblItemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(lblItemsLayout.createSequentialGroup()
-                .addGroup(lblItemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnItems, javax.swing.GroupLayout.DEFAULT_SIZE, 94, Short.MAX_VALUE)
-                    .addComponent(btnSeries, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 94, Short.MAX_VALUE))
-                .addContainerGap())
+                .addComponent(btnMateriales, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 26, Short.MAX_VALUE))
         );
         lblItemsLayout.setVerticalGroup(
             lblItemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lblItemsLayout.createSequentialGroup()
-                .addComponent(btnItems, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnSeries, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(22, 22, 22))
+            .addComponent(btnMateriales, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
         );
 
         Escritorio.add(lblItems);
-        lblItems.setBounds(341, 0, 100, 96);
+        lblItems.setBounds(260, 0, 120, 40);
 
-        lblCancelacionServicio.setBackground(new java.awt.Color(255, 102, 102));
-        lblCancelacionServicio.setForeground(new java.awt.Color(255, 255, 255));
-
-        btnCancelacionServicio.setBackground(new java.awt.Color(0, 0, 0));
-        btnCancelacionServicio.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        btnCancelacionServicio.setForeground(new java.awt.Color(0, 0, 0));
-        btnCancelacionServicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-cancelar-20.png"))); // NOI18N
-        btnCancelacionServicio.setText("Cancelacion de Servicio");
-
-        javax.swing.GroupLayout lblCancelacionServicioLayout = new javax.swing.GroupLayout(lblCancelacionServicio);
-        lblCancelacionServicio.setLayout(lblCancelacionServicioLayout);
-        lblCancelacionServicioLayout.setHorizontalGroup(
-            lblCancelacionServicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnCancelacionServicio, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
-        );
-        lblCancelacionServicioLayout.setVerticalGroup(
-            lblCancelacionServicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnCancelacionServicio, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
-        );
-
-        Escritorio.add(lblCancelacionServicio);
-        lblCancelacionServicio.setBounds(631, 310, 210, 29);
-
-        lblSuspension.setBackground(new java.awt.Color(255, 102, 102));
-        lblSuspension.setForeground(new java.awt.Color(255, 255, 255));
+        lbltipoCliente.setBackground(new java.awt.Color(255, 102, 102));
+        lbltipoCliente.setForeground(new java.awt.Color(255, 255, 255));
 
         btnSuspension.setBackground(new java.awt.Color(0, 0, 0));
         btnSuspension.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
@@ -492,226 +253,52 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
         btnSuspension.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-cancelar-20.png"))); // NOI18N
         btnSuspension.setText("Suspension ");
 
-        javax.swing.GroupLayout lblSuspensionLayout = new javax.swing.GroupLayout(lblSuspension);
-        lblSuspension.setLayout(lblSuspensionLayout);
-        lblSuspensionLayout.setHorizontalGroup(
-            lblSuspensionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnSuspension, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
-        );
-        lblSuspensionLayout.setVerticalGroup(
-            lblSuspensionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnSuspension, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-        );
-
-        Escritorio.add(lblSuspension);
-        lblSuspension.setBounds(631, 270, 210, 40);
-
-        lbltipoCliente.setBackground(new java.awt.Color(255, 102, 102));
-        lbltipoCliente.setForeground(new java.awt.Color(255, 255, 255));
-
-        btnTipoCliente.setBackground(new java.awt.Color(0, 0, 0));
-        btnTipoCliente.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        btnTipoCliente.setForeground(new java.awt.Color(0, 0, 0));
-        btnTipoCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-cliente-de-empresa-20.png"))); // NOI18N
-        btnTipoCliente.setText("Tipos de cliente");
-
         javax.swing.GroupLayout lbltipoClienteLayout = new javax.swing.GroupLayout(lbltipoCliente);
         lbltipoCliente.setLayout(lbltipoClienteLayout);
         lbltipoClienteLayout.setHorizontalGroup(
             lbltipoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(lbltipoClienteLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnTipoCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(btnSuspension, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 22, Short.MAX_VALUE))
         );
         lbltipoClienteLayout.setVerticalGroup(
             lbltipoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(lbltipoClienteLayout.createSequentialGroup()
-                .addComponent(btnTipoCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(btnSuspension, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 2, Short.MAX_VALUE))
         );
 
         Escritorio.add(lbltipoCliente);
-        lbltipoCliente.setBounds(441, 80, 190, 50);
+        lbltipoCliente.setBounds(370, 40, 190, 30);
 
         lblTarifaInstalacion.setBackground(new java.awt.Color(255, 102, 102));
         lblTarifaInstalacion.setForeground(new java.awt.Color(255, 255, 255));
 
-        btnTarifasInstalacion.setBackground(new java.awt.Color(0, 0, 0));
-        btnTarifasInstalacion.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        btnTarifasInstalacion.setForeground(new java.awt.Color(0, 0, 0));
-        btnTarifasInstalacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-transferencia-de-dinero-20.png"))); // NOI18N
-        btnTarifasInstalacion.setText("Tarifas de Instalacion");
+        btnPlaneInternet.setBackground(new java.awt.Color(0, 0, 0));
+        btnPlaneInternet.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        btnPlaneInternet.setForeground(new java.awt.Color(0, 0, 0));
+        btnPlaneInternet.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-libro-20.png"))); // NOI18N
+        btnPlaneInternet.setText("Planes de Internet");
 
         javax.swing.GroupLayout lblTarifaInstalacionLayout = new javax.swing.GroupLayout(lblTarifaInstalacion);
         lblTarifaInstalacion.setLayout(lblTarifaInstalacionLayout);
         lblTarifaInstalacionLayout.setHorizontalGroup(
             lblTarifaInstalacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lblTarifaInstalacionLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lblTarifaInstalacionLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnTarifasInstalacion, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
+                .addComponent(btnPlaneInternet, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
                 .addContainerGap())
         );
         lblTarifaInstalacionLayout.setVerticalGroup(
             lblTarifaInstalacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(lblTarifaInstalacionLayout.createSequentialGroup()
-                .addComponent(btnTarifasInstalacion, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(btnPlaneInternet, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
         Escritorio.add(lblTarifaInstalacion);
-        lblTarifaInstalacion.setBounds(441, 40, 190, 50);
-
-        lblCambioPlan.setBackground(new java.awt.Color(255, 102, 102));
-        lblCambioPlan.setForeground(new java.awt.Color(255, 255, 255));
-
-        btnCambioPlan.setBackground(new java.awt.Color(0, 0, 0));
-        btnCambioPlan.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        btnCambioPlan.setForeground(new java.awt.Color(0, 0, 0));
-        btnCambioPlan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-cambiar-20.png"))); // NOI18N
-        btnCambioPlan.setText("Cambio Plan");
-
-        javax.swing.GroupLayout lblCambioPlanLayout = new javax.swing.GroupLayout(lblCambioPlan);
-        lblCambioPlan.setLayout(lblCambioPlanLayout);
-        lblCambioPlanLayout.setHorizontalGroup(
-            lblCambioPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnCambioPlan, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
-        );
-        lblCambioPlanLayout.setVerticalGroup(
-            lblCambioPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnCambioPlan, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
-        );
-
-        Escritorio.add(lblCambioPlan);
-        lblCambioPlan.setBounds(631, 240, 210, 37);
-
-        lblServicio.setBackground(new java.awt.Color(255, 102, 102));
-        lblServicio.setForeground(new java.awt.Color(255, 255, 255));
-
-        btnServicio.setBackground(new java.awt.Color(0, 0, 0));
-        btnServicio.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        btnServicio.setForeground(new java.awt.Color(0, 0, 0));
-        btnServicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-carpeta-20.png"))); // NOI18N
-        btnServicio.setText("Servicio");
-
-        javax.swing.GroupLayout lblServicioLayout = new javax.swing.GroupLayout(lblServicio);
-        lblServicio.setLayout(lblServicioLayout);
-        lblServicioLayout.setHorizontalGroup(
-            lblServicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnServicio, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
-        );
-        lblServicioLayout.setVerticalGroup(
-            lblServicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnServicio, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-        );
-
-        Escritorio.add(lblServicio);
-        lblServicio.setBounds(631, 200, 210, 40);
-
-        lblNombresTecnicos.setBackground(new java.awt.Color(255, 102, 102));
-        lblNombresTecnicos.setForeground(new java.awt.Color(255, 255, 255));
-
-        btnNombresTecnicos.setBackground(new java.awt.Color(0, 0, 0));
-        btnNombresTecnicos.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        btnNombresTecnicos.setForeground(new java.awt.Color(0, 0, 0));
-        btnNombresTecnicos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-libreta-de-direcciones-2-20.png"))); // NOI18N
-        btnNombresTecnicos.setText("Nombres Tecnicos");
-
-        javax.swing.GroupLayout lblNombresTecnicosLayout = new javax.swing.GroupLayout(lblNombresTecnicos);
-        lblNombresTecnicos.setLayout(lblNombresTecnicosLayout);
-        lblNombresTecnicosLayout.setHorizontalGroup(
-            lblNombresTecnicosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lblNombresTecnicosLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnNombresTecnicos, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        lblNombresTecnicosLayout.setVerticalGroup(
-            lblNombresTecnicosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lblNombresTecnicosLayout.createSequentialGroup()
-                .addComponent(btnNombresTecnicos, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-
-        Escritorio.add(lblNombresTecnicos);
-        lblNombresTecnicos.setBounds(441, 0, 190, 47);
-
-        lblVelocidades.setBackground(new java.awt.Color(255, 102, 102));
-        lblVelocidades.setForeground(new java.awt.Color(255, 255, 255));
-
-        btnVelocidadesPlan.setBackground(new java.awt.Color(0, 0, 0));
-        btnVelocidadesPlan.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        btnVelocidadesPlan.setForeground(new java.awt.Color(0, 0, 0));
-        btnVelocidadesPlan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-velocidad-20.png"))); // NOI18N
-        btnVelocidadesPlan.setText("Velocidades de plan");
-
-        javax.swing.GroupLayout lblVelocidadesLayout = new javax.swing.GroupLayout(lblVelocidades);
-        lblVelocidades.setLayout(lblVelocidadesLayout);
-        lblVelocidadesLayout.setHorizontalGroup(
-            lblVelocidadesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lblVelocidadesLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnVelocidadesPlan, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        lblVelocidadesLayout.setVerticalGroup(
-            lblVelocidadesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnVelocidadesPlan, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
-        );
-
-        Escritorio.add(lblVelocidades);
-        lblVelocidades.setBounds(441, 120, 190, 50);
-
-        lblOrdenesTrabajo.setBackground(new java.awt.Color(255, 102, 102));
-        lblOrdenesTrabajo.setForeground(new java.awt.Color(255, 255, 255));
-
-        btnOrdenesTrabajo.setBackground(new java.awt.Color(0, 0, 0));
-        btnOrdenesTrabajo.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        btnOrdenesTrabajo.setForeground(new java.awt.Color(0, 0, 0));
-        btnOrdenesTrabajo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-carpeta-20.png"))); // NOI18N
-        btnOrdenesTrabajo.setText("Ordenes de Trabajo");
-
-        javax.swing.GroupLayout lblOrdenesTrabajoLayout = new javax.swing.GroupLayout(lblOrdenesTrabajo);
-        lblOrdenesTrabajo.setLayout(lblOrdenesTrabajoLayout);
-        lblOrdenesTrabajoLayout.setHorizontalGroup(
-            lblOrdenesTrabajoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lblOrdenesTrabajoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnOrdenesTrabajo, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        lblOrdenesTrabajoLayout.setVerticalGroup(
-            lblOrdenesTrabajoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lblOrdenesTrabajoLayout.createSequentialGroup()
-                .addComponent(btnOrdenesTrabajo, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        Escritorio.add(lblOrdenesTrabajo);
-        lblOrdenesTrabajo.setBounds(441, 290, 190, 50);
-
-        lblComprasPanel.setBackground(new java.awt.Color(255, 102, 102));
-        lblComprasPanel.setForeground(new java.awt.Color(255, 255, 255));
-
-        btnCompras.setBackground(new java.awt.Color(0, 0, 0));
-        btnCompras.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        btnCompras.setForeground(new java.awt.Color(0, 0, 0));
-        btnCompras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-devolución-de-compra-20.png"))); // NOI18N
-        btnCompras.setText("Compras");
-
-        javax.swing.GroupLayout lblComprasPanelLayout = new javax.swing.GroupLayout(lblComprasPanel);
-        lblComprasPanel.setLayout(lblComprasPanelLayout);
-        lblComprasPanelLayout.setHorizontalGroup(
-            lblComprasPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnCompras, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE)
-        );
-        lblComprasPanelLayout.setVerticalGroup(
-            lblComprasPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnCompras, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
-        );
-
-        Escritorio.add(lblComprasPanel);
-        lblComprasPanel.setBounds(161, 0, 90, 39);
+        lblTarifaInstalacion.setBounds(360, 0, 190, 40);
 
         lblFactura.setBackground(new java.awt.Color(255, 102, 102));
         lblFactura.setForeground(new java.awt.Color(255, 255, 255));
@@ -749,15 +336,73 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
         lblContribuyentes.setLayout(lblContribuyentesLayout);
         lblContribuyentesLayout.setHorizontalGroup(
             lblContribuyentesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnContribuyentes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(lblContribuyentesLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnContribuyentes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         lblContribuyentesLayout.setVerticalGroup(
             lblContribuyentesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnContribuyentes, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+            .addComponent(btnContribuyentes, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
         );
 
         Escritorio.add(lblContribuyentes);
-        lblContribuyentes.setBounds(251, 0, 124, 39);
+        lblContribuyentes.setBounds(170, 0, 140, 40);
+
+        lbltipoContratos.setBackground(new java.awt.Color(255, 102, 102));
+        lbltipoContratos.setForeground(new java.awt.Color(255, 255, 255));
+
+        btnContratos.setBackground(new java.awt.Color(0, 0, 0));
+        btnContratos.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        btnContratos.setForeground(new java.awt.Color(0, 0, 0));
+        btnContratos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-contrato-de-trabajo-20.png"))); // NOI18N
+        btnContratos.setText("Contratos");
+
+        javax.swing.GroupLayout lbltipoContratosLayout = new javax.swing.GroupLayout(lbltipoContratos);
+        lbltipoContratos.setLayout(lbltipoContratosLayout);
+        lbltipoContratosLayout.setHorizontalGroup(
+            lbltipoContratosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(lbltipoContratosLayout.createSequentialGroup()
+                .addComponent(btnContratos, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 2, Short.MAX_VALUE))
+        );
+        lbltipoContratosLayout.setVerticalGroup(
+            lbltipoContratosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(lbltipoContratosLayout.createSequentialGroup()
+                .addComponent(btnContratos, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 14, Short.MAX_VALUE))
+        );
+
+        Escritorio.add(lbltipoContratos);
+        lbltipoContratos.setBounds(370, 70, 180, 50);
+
+        lbltipoOrdenes.setBackground(new java.awt.Color(255, 102, 102));
+        lbltipoOrdenes.setForeground(new java.awt.Color(255, 255, 255));
+
+        btnOrdenesTrabajo.setBackground(new java.awt.Color(0, 0, 0));
+        btnOrdenesTrabajo.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        btnOrdenesTrabajo.setForeground(new java.awt.Color(0, 0, 0));
+        btnOrdenesTrabajo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/IconosSubMenu/icons8-carpeta-20.png"))); // NOI18N
+        btnOrdenesTrabajo.setText("Ordenes de Trabajo");
+
+        javax.swing.GroupLayout lbltipoOrdenesLayout = new javax.swing.GroupLayout(lbltipoOrdenes);
+        lbltipoOrdenes.setLayout(lbltipoOrdenesLayout);
+        lbltipoOrdenesLayout.setHorizontalGroup(
+            lbltipoOrdenesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lbltipoOrdenesLayout.createSequentialGroup()
+                .addGap(0, 2, Short.MAX_VALUE)
+                .addComponent(btnOrdenesTrabajo, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        lbltipoOrdenesLayout.setVerticalGroup(
+            lbltipoOrdenesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(lbltipoOrdenesLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnOrdenesTrabajo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(15, Short.MAX_VALUE))
+        );
+
+        Escritorio.add(lbltipoOrdenes);
+        lbltipoOrdenes.setBounds(370, 120, 180, 50);
 
         jDesktopPane1.add(Escritorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 1300, 610));
 
@@ -774,6 +419,22 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    public JPanel getLbltipoContratos() {
+        return lbltipoContratos;
+    }
+
+    public void setLbltipoContratos(JPanel lbltipoContratos) {
+        this.lbltipoContratos = lbltipoContratos;
+    }
+
+    public JPanel getLbltipoOrdenes() {
+        return lbltipoOrdenes;
+    }
+
+    public void setLbltipoOrdenes(JPanel lbltipoOrdenes) {
+        this.lbltipoOrdenes = lbltipoOrdenes;
+    }
 
     public JLabel getBtnSalir() {
         return btnSalir;
@@ -807,44 +468,12 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
         this.Panel2MenuInicio = Panel2MenuInicio;
     }
 
-    public JLabel getBtnCambioDireccion() {
-        return btnCambioDireccion;
-    }
-
-    public void setBtnCambioDireccion(JLabel btnCambioDireccion) {
-        this.btnCambioDireccion = btnCambioDireccion;
-    }
-
-    public JLabel getBtnCambioPlan() {
-        return btnCambioPlan;
-    }
-
-    public void setBtnCambioPlan(JLabel btnCambioPlan) {
-        this.btnCambioPlan = btnCambioPlan;
-    }
-
-    public JLabel getBtnCancelacionServicio() {
-        return btnCancelacionServicio;
-    }
-
-    public void setBtnCancelacionServicio(JLabel btnCancelacionServicio) {
-        this.btnCancelacionServicio = btnCancelacionServicio;
-    }
-
     public JLabel getBtnCasosSoporte() {
         return btnCasosSoporte;
     }
 
     public void setBtnCasosSoporte(JLabel btnCasosSoporte) {
         this.btnCasosSoporte = btnCasosSoporte;
-    }
-
-    public JLabel getBtnCompras() {
-        return btnCompras;
-    }
-
-    public void setBtnCompras(JLabel btnCompras) {
-        this.btnCompras = btnCompras;
     }
 
     public JLabel getBtnContratos() {
@@ -872,11 +501,11 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
     }
 
     public JLabel getBtnItems() {
-        return btnItems;
+        return btnMateriales;
     }
 
     public void setBtnItems(JLabel btnItems) {
-        this.btnItems = btnItems;
+        this.btnMateriales = btnItems;
     }
 
     public JLabel getBtnMotivosSoporte() {
@@ -885,22 +514,6 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
 
     public void setBtnMotivosSoporte(JLabel btnMotivosSoporte) {
         this.btnMotivosSoporte = btnMotivosSoporte;
-    }
-
-    public JLabel getBtnNombresTecnicos() {
-        return btnNombresTecnicos;
-    }
-
-    public void setBtnNombresTecnicos(JLabel btnNombresTecnicos) {
-        this.btnNombresTecnicos = btnNombresTecnicos;
-    }
-
-    public JLabel getBtnOperarioSoporte() {
-        return btnOperarioSoporte;
-    }
-
-    public void setBtnOperarioSoporte(JLabel btnOperarioSoporte) {
-        this.btnOperarioSoporte = btnOperarioSoporte;
     }
 
     public JLabel getBtnOrdenesTrabajo() {
@@ -919,44 +532,12 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
         this.btnPlaneInternet = btnPlaneInternet;
     }
 
-    public JLabel getBtnReactivacion() {
-        return btnReactivacion;
-    }
-
-    public void setBtnReactivacion(JLabel btnReactivacion) {
-        this.btnReactivacion = btnReactivacion;
-    }
-
     public JLabel getBtnReportes() {
         return btnReportes;
     }
 
     public void setBtnReportes(JLabel btnReportes) {
         this.btnReportes = btnReportes;
-    }
-
-    public JLabel getBtnSeries() {
-        return btnSeries;
-    }
-
-    public void setBtnSeries(JLabel btnSeries) {
-        this.btnSeries = btnSeries;
-    }
-
-    public JLabel getBtnServicio() {
-        return btnServicio;
-    }
-
-    public void setBtnServicio(JLabel btnServicio) {
-        this.btnServicio = btnServicio;
-    }
-
-    public JLabel getBtnSolicitudes() {
-        return btnSolicitudes;
-    }
-
-    public void setBtnSolicitudes(JLabel btnSolicitudes) {
-        this.btnSolicitudes = btnSolicitudes;
     }
 
     public JLabel getBtnSuspension() {
@@ -967,60 +548,12 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
         this.btnSuspension = btnSuspension;
     }
 
-    public JLabel getBtnTarifasInstalacion() {
-        return btnTarifasInstalacion;
-    }
-
-    public void setBtnTarifasInstalacion(JLabel btnTarifasInstalacion) {
-        this.btnTarifasInstalacion = btnTarifasInstalacion;
-    }
-
-    public JLabel getBtnTipoCliente() {
-        return btnTipoCliente;
-    }
-
-    public void setBtnTipoCliente(JLabel btnTipoCliente) {
-        this.btnTipoCliente = btnTipoCliente;
-    }
-
-    public JLabel getBtnVelocidadesPlan() {
-        return btnVelocidadesPlan;
-    }
-
-    public void setBtnVelocidadesPlan(JLabel btnVelocidadesPlan) {
-        this.btnVelocidadesPlan = btnVelocidadesPlan;
-    }
-
     public JDesktopPane getjDesktopPane1() {
         return jDesktopPane1;
     }
 
     public void setjDesktopPane1(JDesktopPane jDesktopPane1) {
         this.jDesktopPane1 = jDesktopPane1;
-    }
-
-    public JPanel getLblCambioDireccion() {
-        return lblCambioDireccion;
-    }
-
-    public void setLblCambioDireccion(JPanel lblCambioDireccion) {
-        this.lblCambioDireccion = lblCambioDireccion;
-    }
-
-    public JPanel getLblCambioPlan() {
-        return lblCambioPlan;
-    }
-
-    public void setLblCambioPlan(JPanel lblCambioPlan) {
-        this.lblCambioPlan = lblCambioPlan;
-    }
-
-    public JPanel getLblCancelacionServicio() {
-        return lblCancelacionServicio;
-    }
-
-    public void setLblCancelacionServicio(JPanel lblCancelacionServicio) {
-        this.lblCancelacionServicio = lblCancelacionServicio;
     }
 
     public JPanel getLblCasosSoporte() {
@@ -1037,30 +570,6 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
 
     public void setLblCedula(JLabel lblCedula) {
         this.lblCedula = lblCedula;
-    }
-
-    public JLabel getLblCompras() {
-        return lblCompras;
-    }
-
-    public void setLblCompras(JLabel lblCompras) {
-        this.lblCompras = lblCompras;
-    }
-
-    public JPanel getLblComprasPanel() {
-        return lblComprasPanel;
-    }
-
-    public void setLblComprasPanel(JPanel lblComprasPanel) {
-        this.lblComprasPanel = lblComprasPanel;
-    }
-
-    public JPanel getLblContratos() {
-        return lblContratos;
-    }
-
-    public void setLblContratos(JPanel lblContratos) {
-        this.lblContratos = lblContratos;
     }
 
     public JPanel getLblContribuyentes() {
@@ -1103,6 +612,14 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
         this.lblInventario = lblInventario;
     }
 
+    public JLabel getBtnMateriales() {
+        return btnMateriales;
+    }
+
+    public void setBtnMateriales(JLabel btnMateriales) {
+        this.btnMateriales = btnMateriales;
+    }
+
     public JPanel getLblItems() {
         return lblItems;
     }
@@ -1127,52 +644,12 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
         this.lblNombreUsuario = lblNombreUsuario;
     }
 
-    public JPanel getLblNombresTecnicos() {
-        return lblNombresTecnicos;
-    }
-
-    public void setLblNombresTecnicos(JPanel lblNombresTecnicos) {
-        this.lblNombresTecnicos = lblNombresTecnicos;
-    }
-
-    public JPanel getLblOperariosSoporte() {
-        return lblOperariosSoporte;
-    }
-
-    public void setLblOperariosSoporte(JPanel lblOperariosSoporte) {
-        this.lblOperariosSoporte = lblOperariosSoporte;
-    }
-
-    public JPanel getLblOrdenesTrabajo() {
-        return lblOrdenesTrabajo;
-    }
-
-    public void setLblOrdenesTrabajo(JPanel lblOrdenesTrabajo) {
-        this.lblOrdenesTrabajo = lblOrdenesTrabajo;
-    }
-
-    public JPanel getLblPlanesInternet() {
-        return lblPlanesInternet;
-    }
-
-    public void setLblPlanesInternet(JPanel lblPlanesInternet) {
-        this.lblPlanesInternet = lblPlanesInternet;
-    }
-
     public JLabel getLblProvServiciosInternet() {
         return lblProvServiciosInternet;
     }
 
     public void setLblProvServiciosInternet(JLabel lblProvServiciosInternet) {
         this.lblProvServiciosInternet = lblProvServiciosInternet;
-    }
-
-    public JPanel getLblReactivacion() {
-        return lblReactivacion;
-    }
-
-    public void setLblReactivacion(JPanel lblReactivacion) {
-        this.lblReactivacion = lblReactivacion;
     }
 
     public JLabel getLblRegistroLlamadas() {
@@ -1183,52 +660,12 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
         this.lblRegistroLlamadas = lblRegistroLlamadas;
     }
 
-    public JPanel getLblReportesStock() {
-        return lblReportesStock;
-    }
-
-    public void setLblReportesStock(JPanel lblReportesStock) {
-        this.lblReportesStock = lblReportesStock;
-    }
-
-    public JPanel getLblServicio() {
-        return lblServicio;
-    }
-
-    public void setLblServicio(JPanel lblServicio) {
-        this.lblServicio = lblServicio;
-    }
-
-    public JPanel getLblSolicitudes() {
-        return lblSolicitudes;
-    }
-
-    public void setLblSolicitudes(JPanel lblSolicitudes) {
-        this.lblSolicitudes = lblSolicitudes;
-    }
-
-    public JPanel getLblSuspension() {
-        return lblSuspension;
-    }
-
-    public void setLblSuspension(JPanel lblSuspension) {
-        this.lblSuspension = lblSuspension;
-    }
-
     public JPanel getLblTarifaInstalacion() {
         return lblTarifaInstalacion;
     }
 
     public void setLblTarifaInstalacion(JPanel lblTarifaInstalacion) {
         this.lblTarifaInstalacion = lblTarifaInstalacion;
-    }
-
-    public JPanel getLblVelocidades() {
-        return lblVelocidades;
-    }
-
-    public void setLblVelocidades(JPanel lblVelocidades) {
-        this.lblVelocidades = lblVelocidades;
     }
 
     public JLabel getLblVentas() {
@@ -1286,43 +723,24 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
     private javax.swing.JDesktopPane Escritorio;
     private javax.swing.JPanel Panel1MenuInicio;
     private javax.swing.JPanel Panel2MenuInicio;
-    private javax.swing.JLabel btnCambioDireccion;
-    private javax.swing.JLabel btnCambioPlan;
-    private javax.swing.JLabel btnCancelacionServicio;
     private javax.swing.JLabel btnCasosSoporte;
-    private javax.swing.JLabel btnCompras;
     private javax.swing.JLabel btnContratos;
     private javax.swing.JLabel btnContribuyentes;
     private javax.swing.JLabel btnFacturas;
-    private javax.swing.JLabel btnItems;
+    private javax.swing.JLabel btnMateriales;
     private javax.swing.JLabel btnMotivosSoporte;
-    private javax.swing.JLabel btnNombresTecnicos;
-    private javax.swing.JLabel btnOperarioSoporte;
     private javax.swing.JLabel btnOrdenesTrabajo;
     private javax.swing.JLabel btnPlaneInternet;
-    private javax.swing.JLabel btnReactivacion;
     private javax.swing.JLabel btnReportes;
     private javax.swing.JLabel btnSalir;
-    private javax.swing.JLabel btnSeries;
-    private javax.swing.JLabel btnServicio;
-    private javax.swing.JLabel btnSolicitudes;
     private javax.swing.JLabel btnSuspension;
-    private javax.swing.JLabel btnTarifasInstalacion;
-    private javax.swing.JLabel btnTipoCliente;
-    private javax.swing.JLabel btnVelocidadesPlan;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel lblCambioDireccion;
-    private javax.swing.JPanel lblCambioPlan;
-    private javax.swing.JPanel lblCancelacionServicio;
     private javax.swing.JPanel lblCasosSoporte;
     private javax.swing.JLabel lblCedula;
-    private javax.swing.JLabel lblCompras;
-    private javax.swing.JPanel lblComprasPanel;
-    private javax.swing.JPanel lblContratos;
     private javax.swing.JPanel lblContribuyentes;
     private javax.swing.JLabel lblDirectorio;
     private javax.swing.JPanel lblFactura;
@@ -1331,20 +749,12 @@ public class MenuInicio2_0 extends javax.swing.JFrame {
     private javax.swing.JPanel lblItems;
     private javax.swing.JPanel lblMotivoSoporte;
     private javax.swing.JLabel lblNombreUsuario;
-    private javax.swing.JPanel lblNombresTecnicos;
-    private javax.swing.JPanel lblOperariosSoporte;
-    private javax.swing.JPanel lblOrdenesTrabajo;
-    private javax.swing.JPanel lblPlanesInternet;
     private javax.swing.JLabel lblProvServiciosInternet;
-    private javax.swing.JPanel lblReactivacion;
     private javax.swing.JLabel lblRegistroLlamadas;
-    private javax.swing.JPanel lblReportesStock;
-    private javax.swing.JPanel lblServicio;
-    private javax.swing.JPanel lblSolicitudes;
-    private javax.swing.JPanel lblSuspension;
     private javax.swing.JPanel lblTarifaInstalacion;
-    private javax.swing.JPanel lblVelocidades;
     private javax.swing.JLabel lblVentas;
     private javax.swing.JPanel lbltipoCliente;
+    private javax.swing.JPanel lbltipoContratos;
+    private javax.swing.JPanel lbltipoOrdenes;
     // End of variables declaration//GEN-END:variables
 }

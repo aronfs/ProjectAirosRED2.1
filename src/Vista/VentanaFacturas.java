@@ -214,13 +214,13 @@ public class VentanaFacturas extends javax.swing.JInternalFrame {
         PanelVentaFacturasPanelPrincipanl.setBackground(new java.awt.Color(255, 255, 255));
         PanelVentaFacturasPanelPrincipanl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        VentanaFacturasPanelFiltros.setBackground(new java.awt.Color(0, 102, 51));
+        VentanaFacturasPanelFiltros.setBackground(new java.awt.Color(153, 0, 0));
 
-        VentanaFacturas_BntAplicarFiltro.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaFacturas_BntAplicarFiltro.setBackground(new java.awt.Color(51, 51, 51));
         VentanaFacturas_BntAplicarFiltro.setForeground(new java.awt.Color(255, 255, 255));
         VentanaFacturas_BntAplicarFiltro.setText("Aplicar Filtros");
 
-        VentanaFacturas_BntActualizar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaFacturas_BntActualizar.setBackground(new java.awt.Color(51, 51, 51));
         VentanaFacturas_BntActualizar.setForeground(new java.awt.Color(255, 255, 255));
         VentanaFacturas_BntActualizar.setText("Actualizar");
 
@@ -244,21 +244,21 @@ public class VentanaFacturas extends javax.swing.JInternalFrame {
 
         PanelVentaFacturasPanelPrincipanl.add(VentanaFacturasPanelFiltros, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 980, 40));
 
-        VentanaFacturasPanelBntInicio.setBackground(new java.awt.Color(0, 102, 51));
+        VentanaFacturasPanelBntInicio.setBackground(new java.awt.Color(153, 0, 0));
 
-        btnNuevoVentanaFactura.setBackground(new java.awt.Color(0, 204, 51));
+        btnNuevoVentanaFactura.setBackground(new java.awt.Color(51, 51, 51));
         btnNuevoVentanaFactura.setForeground(new java.awt.Color(255, 255, 255));
         btnNuevoVentanaFactura.setText("Nuevo");
 
-        VentanaFacturas_BntEditar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaFacturas_BntEditar.setBackground(new java.awt.Color(51, 51, 51));
         VentanaFacturas_BntEditar.setForeground(new java.awt.Color(255, 255, 255));
         VentanaFacturas_BntEditar.setText("Editar");
 
-        VentanaFacturas_bntAnular.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaFacturas_bntAnular.setBackground(new java.awt.Color(51, 51, 51));
         VentanaFacturas_bntAnular.setForeground(new java.awt.Color(255, 255, 255));
         VentanaFacturas_bntAnular.setText("Anular");
 
-        VentanaFacturas_BntVerFactura.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaFacturas_BntVerFactura.setBackground(new java.awt.Color(51, 51, 51));
         VentanaFacturas_BntVerFactura.setForeground(new java.awt.Color(255, 255, 255));
         VentanaFacturas_BntVerFactura.setText("Ver Factura");
 

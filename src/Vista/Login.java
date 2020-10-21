@@ -49,15 +49,15 @@ public class Login extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        Panel1Login.setBackground(new java.awt.Color(255, 51, 102));
+        Panel1Login.setBackground(new java.awt.Color(102, 0, 51));
 
         Panel2Login.setBackground(new java.awt.Color(204, 0, 51));
         Panel2Login.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblUsuario.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         lblUsuario.setForeground(new java.awt.Color(255, 255, 255));
-        lblUsuario.setText("Cedula:");
-        Panel2Login.add(lblUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, -1, -1));
+        lblUsuario.setText("Nombre Usuario:");
+        Panel2Login.add(lblUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, -1, -1));
 
         lblContrasena.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         lblContrasena.setForeground(new java.awt.Color(255, 255, 255));

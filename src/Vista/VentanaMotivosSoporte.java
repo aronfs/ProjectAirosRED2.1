@@ -66,7 +66,7 @@ public class VentanaMotivosSoporte extends javax.swing.JInternalFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Motivos de Soporte");
 
-        VentanaMotivosSoporte_BntActuaizar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaMotivosSoporte_BntActuaizar.setBackground(new java.awt.Color(51, 51, 51));
         VentanaMotivosSoporte_BntActuaizar.setForeground(new java.awt.Color(255, 255, 255));
         VentanaMotivosSoporte_BntActuaizar.setText("Actualizar");
 

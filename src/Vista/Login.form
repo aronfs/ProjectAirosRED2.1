@@ -36,7 +36,7 @@
     <Container class="javax.swing.JPanel" name="Panel1Login">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="33" red="ff" type="rgb"/>
+          <Color blue="33" green="0" red="66" type="rgb"/>
         </Property>
       </Properties>
 
@@ -87,11 +87,11 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Cedula:"/>
+                <Property name="text" type="java.lang.String" value="Nombre Usuario:"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="90" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="40" y="90" width="-1" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>

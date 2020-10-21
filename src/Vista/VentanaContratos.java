@@ -263,7 +263,7 @@ public class VentanaContratos extends javax.swing.JInternalFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        VentanaContratos_PanelBotonesNuevo.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaContratos_PanelBotonesNuevo.setBackground(new java.awt.Color(204, 0, 51));
 
         VentanaContratos_BntNuevo.setText("Nuevo");
 
@@ -385,7 +385,7 @@ public class VentanaContratos extends javax.swing.JInternalFrame {
 
         jPanel1.add(VentanaContratos_PanelContrato, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 970, 220));
 
-        VentanaContratos_PanelBntsAplicar.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaContratos_PanelBntsAplicar.setBackground(new java.awt.Color(204, 0, 51));
 
         VentanaContratos_BntAplicarFiltro.setText("Aplicar Filtros");
 
